@@ -1,0 +1,205 @@
+{"intents": [
+  {
+      "tag": "greetings",
+      "patterns": ["hello", "hello", "hi", "hai", "hi", "hey", "what's up?", "is anyone there?", "good day", "hola", "hi there", "hey there"],
+      "responses": ["Hello, how can I assist you today?"],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["bye", "see you later", "goodbye", "nice chatting to you, bye", "till next time", "bye bye", "see you soon", "see you later", "goodbye", "nice chatting to you, bye"],
+      "responses": ["See you later! Have a great day!", "Goodbye, it was nice chatting with you.", "Thank you for chatting with me."],
+      "context": [""]
+    },
+  {
+    "tag": "thanks",
+    "patterns": ["thanks", "thank you", "that's helpful", "awesome, thanks", "thanks for helping me","thank you for your help","thanks, that's a lot of help.","thank you for the info.","thank you for the details.","thanks for your information","thanks, that really helped me.",""],
+    "responses": ["Happy to help!", "I'm pleased to help.", "My pleasure","Glad to be of service.","You're very welcome.","You're welcome","You are most welcome.","It's an honour","it's my pleasure","It's a joy to serve you","I'm happy to do it.","Its a privilege","Helping makes me joyful.","I enjoy providing assistance.","I enjoy assisting others.","I am always there to help.","Always at your service.","Always available to assist.","delighted to be of service.","I am happy to be of service."],
+    "context": [""]
+  },
+
+  {
+    "tag":"age",
+    "patterns": ["how old are you?","what is your age?","what's your age?","how old are you","what age are you?","your age, please.","can i ask how old you are?","could you tell me how old you are?"],
+    "responses": ["Age is something that doesn't matter.","My age is now 1 week.","Baby me is a week old today.","Just 1 week old here!","I am one week old."],
+    "context": [""]
+  },
+  {
+    "tag": "noanswer",
+    "patterns": [""],
+    "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand","Sorry, I cannot comprehend you.","Sorry, I don't get you.","Sorry, I don't understand.","Apologies, I just don't get what you're saying.","I'm sorry, I just don't get what you're saying.","So sorry, I just don't get what you're saying.","I don't get it","Sadly, I'm unable to understand you.","I’m sorry, I didn't catch that.","Can't Understand Your Question","I Don't Get Your Question","I'm confused by your question","Not Understanding Your Request","We Have No Idea What Your Question Is","please elaborate your question"],
+    "context": [""]
+  },
+  {
+    "tag": "options",
+    "patterns": ["how you could help me?", "what you can do?", "what help you provide?", "how you can be helpful?", "what support is offered","'how could you assist me?","what could you do for me?","how might you possibly assist me?","tell me what you can do to assist me.","what kind of help is available?","what help is available?","what help is offered?","is there anything you can do about it?"],
+    "responses": ["I can guide you through Adverse management problems, order tracking, person to be contacted and Department related queries","Assist with the following issues technical query,management query,order query,tracking query,procurement query,outsourcing problem,manufacturing delay","I can help with these issues: Management query, order query, tracking query, procurement query, outsourcing problem, production delay.","I can provide assistance with the following issues: technical question, management-related question, order-related question, tracking-related question, procurement question, problem with outsourcing, and production delay.","I can help with technical, managerial, order, tracking, procurement, outsourcing, and production concerns.","If you're having trouble with anything related to technology, management, orders, tracking, supplies, outsourcing, or manufacturing, I can help."],
+    "context": [""]
+  },
+  {
+    "tag": "order_tracking",
+    "patterns": ["what happened to my order","where is order","track order my order","where is my order with id ","where's my order","what happened to my order?"],
+    "responses": ["Delayed","Dispatched", "On the Way!","Packed","Shipping","Out for Delivery","Delivered!"],
+    "context": [""]
+  },
+  {
+    "tag": "delivery",
+    "patterns": ["when will my order arrive?","when will my order be delivered?","when will my order come?","how long until I get my purchase?","when can i expect to receive my order?","when can I expect my order to arrive?"],
+    "responses": ["In 4 days, we'll have your order to you.","The delivery time for your order is 4 days.","Within 4 days, we will get your order delivered.","We will deliver your purchase within four days.","We will deliver your purchase within a week.","Within 5 days, we will get your order delivered.","Within 2 days, we will get your order delivered.","Within 6 days, we will get your order delivered.","Within 7 days, we will get your order delivered.","The delivery time for your order is 5 days.","The delivery time for your order is 3 days.","The delivery time for your order is 2 days.","The delivery time for your order is one week.","The delivery time for your order is 6 days.","We will deliver your purchase within two days.","We will deliver your purchase within three days.","We will deliver your purchase within five days.","We will deliver your purchase within six days."],
+    "context": [""]
+  },
+  {"tag": "order_components",
+    "patterns": ["my order Components list?","list of components in  my order?","Components list in my order?","my order list of items?","my order list?","order Components list?"],
+    "responses": ["Asus Laptop, Logitech Master Mouse, Dell Wireless Keyboard, RTX 4090 TI GPU.","The Asus laptop, Logitech Master Mouse, Dell wireless keyboard, and RTX 4090 TI graphics processing unit are on your shopping list.","Your order list includes an Asus laptop, a Logitech Master Mouse, a Dell wireless keyboard, and an RTX 4090 TI GPU.","Your shopping list includes an Asus laptop, a Logitech Master Mouse, a Dell Wireless Keyboard, and a RTX 4090 TI GPU.","Your shopping list includes an HP laptop, an Apple mouse, a Logitech wireless keyboard, and a Ryzen GPU.","Your order list includes an HP laptop, an Apple mouse, a Logitech wireless keyboard, and a Ryzen GPU.","HP Laptop, Apple Mouse, Logitech Wireless Keyboard, Ryzen GPU.","Your order: HP Laptop, Apple Mouse, Logitech Wireless Keyboard, Ryzen GPU","Your order list consists of a Ryzen GPU, an HP Laptop, an Apple Mouse, and a Logitech Wireless Keyboard.","Your order list consists of an RTX 5000 graphics processing unit, an Intel i9 12th generation processor, a Logitech mouse, and a Logitech wireless keyboard.","Your order list includes Rog CPU, Logitech Mouse, Logitech Wireless Keyboard, RTX 5000 GPU, and Intel i9 12th gen Processor.","Your list of orders includes an Acer CPU, a Zebronics mouse, an HP wireless keyboard, a GTX 1650 Ti graphics card, and an AMD 7000 processor.","Your order list is: Acer CPU, Zebronics Mouse, HP Wireless Keyboard, GTX 1650 Ti GPU, and AMD 7000 Processor.","The Acer CPU, Zebronics Mouse, HP Wireless Keyboard, GeForce GTX 1650 Ti graphics card, and AMD 7000 processor are on your shopping list.","An Acer CPU, a Zebronics mouse, a HP wireless keyboard, a GeForce GTX 1650 Ti graphics card, and an AMD 7000 processor are on your shopping list."],
+    "context": [""]
+  },
+  {"tag": "Location",
+    "patterns": ["find order location","locate order location ","What is the Location of order"],
+    "responses": ["Order arrived Mumbai","Delhi houses ","It is in Ahmedabad","It has reached Hyderabad","It has reached Vishakapatnam"],
+    "context": [""]
+  },
+   {"tag": "gadgets",
+         "patterns": ["what are the gadgets in stock?","what gadgets do you have in stock?","which products you have?","what goods do you sell?","what products do you offer?","what are the available electronics?","what kinds of gadgets are there?","tell me about the available electronics","what kinds of electronic devices are in the supply?"],
+         "responses": ["computers,laptops,computer and laptop accessories,GPUs,processors"],
+         "context": [""]
+   },
+  {
+    "tag": "invalid",
+    "patterns": [
+      "Marry me",
+      "I love You",
+      "date me",
+      "chat with me",
+      "I am bored"
+    ],
+    "responses": ["Please ask organisation related query."],
+    "context": [""]
+  },
+
+  {
+    "tag": "cuss",
+    "patterns": ["stupid","bastard","bloody hell","idiot","shit"],
+    "responses": ["Treat any conversion with respect.","Please be polite in conversion.","Please be kind when you talk."],
+    "context": [""]
+  },
+  {"tag": "predict_delay",
+    "patterns": ["why is order delayed"],
+    "responses": ["delay is due to manufacturing","Delay is due to unavailable components"],
+    "context": [""]
+  },
+  {"tag": "about",
+    "patterns": ["how you doing?","how are you","How are you doing?","what's up?"],
+    "responses": ["Thanks For Asking!How can I help you?","Thank You for Inquiring! How can I assist you?"],
+    "context": [""]
+  },
+  {
+    "tag": "about me",
+    "patterns": ["who are you?","what is your name?","who do you"],
+    "responses": ["I am Neo,a chatbot for Maddy,s Store","I am Neo","call me Neo"],
+    "context": [""]
+  },
+
+  {
+    "tag": "payments",
+    "patterns": ["do you take credit cards?", "do you accept mastercard?", "are you cash only?","upi payment" ],
+    "responses": ["We accept VISA, Mastercard and AMEX", "We accept most major credit cards","We accept UPI payments."],
+    "context": [""]
+  },
+  {
+    "tag": "service",
+    "patterns": ["when are you available?","when will you be available","when can we expect to hear back from you?"],
+    "responses": ["We offer round-the-clock assistance","We will be available 24 hours a day, seven days a week"],
+    "context": [""]
+  },
+  {
+    "tag": "refund",
+    "patterns": ["return my money","money back","return amount","i cancelled my order. please refund my money"],
+    "responses": ["your money will be credited to your bank within 7 working days ","money is in process soon it will be credited to you","we will credit to you soon"],
+    "context": [""]
+  },
+  {
+    "tag": "out of stock",
+    "patterns": ["i want this item inform when stock available","i want to be notified when this item is back in stock","i want this item's stock status","when will this item be in stock?"],
+    "responses": ["Sure,We'll let you know about stock","We will keep you updated on stock availability","We will notify you about stock","Stock will be available soon","Stock is available now.","Hey, stock is available now."]
+  },
+  {
+    "tag": "i3 laptop",
+    "patterns": ["suggest i3 laptop","give me i3 laptop","what i3 laptop you have under 40000"],
+    "responses": ["Please view this linKs: <a href='https://tinyurl.com/597and8u'>HP 14s-dy2507TU</a> | <a href='https://tinyurl.com/4fkp4v89'>ASUS VivoBook 15</a> | <a href='https://tinyurl.com/yc4s2c4x'>Lenovo IdeaPad 3</a> | <a href='https://tinyurl.com/3s9z56zf'>Dell Vostro 3420</a> | <a href='https://tinyurl.com/4tu29nu8'>Acer Aspire 3</a>"],
+    "context": [""]
+  },
+  {
+    "tag": "i5 laptop",
+    "patterns": ["suggest i5 laptop","give me i5 laptop","i5 laptop under 60000"],
+    "responses":["Please view this links:<a href='https://tinyurl.com/msnpcd3x'>HP 15s-fy5001TU</a> | <a href='https://tinyurl.com/yknmajnc'>ASUS Vivobook Ultra K14</a> | <a href='https://tinyurl.com/4kh5rwzk'>Dell Inspiron 3511</a> | <a href='https://tinyurl.com/bdhdumf9'>Mi Notebook Pro</a> | <a href='https://tinyurl.com/35ym9kwu'>Lenovo V15</a>"],
+    "context": [""]
+
+  },
+  {
+    "tag": "i7 laptop",
+    "patterns": ["suggest i7 laptop","give me i7 laptop","i7 laptop under 90000"],
+    "responses": ["Please view this links:<a href='https://tinyurl.com/42yafnmu'>ASUS VivoBook K15</a> | <a href='https://tinyurl.com/mszfxd8x'>Dell Inspiron 5320</a> | <a href='https://tinyurl.com/fcyc8wbn'>Lenovo IdeaPad Slim 5</a> | <a href='https://tinyurl.com/36npmyzp'>HP Pavilion Plus</a>"],
+    "context": [""]
+  },
+  {
+    "tag": "i9 laptop",
+    "patterns": ["suggest i9 laptop","give me i9 laptop"],
+    "responses": ["Please view this links:<a href='https://tinyurl.com/t5zhsy7m'>Acer Predator Helios 300</a> | <a href='https://tinyurl.com/yc4mtcpd'>Dell New Alienware x15</a> | <a href='https://tinyurl.com/muk5c6j7'>MSI Raider GE67</a> | <a href='https://tinyurl.com/2pjbwmee'>ASUS Zenbook Pro 14</a>"],
+    "context": [""]
+  },
+  {
+    "tag":"iphone",
+    "patterns":["suggest me iphone models","iphone","give me iphone13","iphone12","iphone13","iphone14"],
+    "responses":["please look in this links:<a href='https://tinyurl.com/3dys63ef'>iphone 12</a> | <a href='https://tinyurl.com/y7pfe52m'>iphone 13</a> | <a href='https://tinyurl.com/5a784t6w'>iphone 14</a>"],
+    "context":[""]
+  },
+  {
+    "tag":"redmi",
+    "patterns":["suggest me redmi mobiles","redmi","redmi note 10","redmi note 9","give me redmi note 10","redmi note 11","redmi note 11"],
+    "responses":["please visit this link:<a href='https://tinyurl.com/2xfyyvas'>redmi note 10 pro max</a> | <a href='https://tinyurl.com/2s4dcv26'>redmi note 11</a> | <a href='https://tinyurl.com/2p9xthcb'>remi note 9</a>"],
+    "context":[""]
+  },
+  {
+    "tag":"realme",
+    "patterns":["suggest me realme mobiles","realme","realme gt","realme 9","take me to realme mobiles","give realme mobile","realme nazro 50 pro","give me real me 9"],
+    "responses":["please visit this link:<a href='https://tinyurl.com/53vmt8ue'>realme 9</a> | <a href='https://tinyurl.com/yc5k6dev'>realme nazro 50 pro </a> | <a href='https://tinyurl.com/25sftf27'>realme gt neo 3t</a>"],
+    "context":[""]
+  },
+  {
+    "tag": "oppo",
+    "patterns":["suggest me oppo mobiles","oppo","oppo f21","give me oppo f19","oppo reno 8","give me oppo mobile"],
+    "responses":["please click this link:<a href='https://tinyurl.com/mwcw2myj'>oppo f21 pro</a> | <a href='https://tinyurl.com/37hse8rt'>oppo reno 8 5g  </a>  | <a href='https://tinyurl.com/ycxrrvyv'>oppo f19 pro</a>"],
+    "context":[""]
+  },
+  {
+    "tag":"vivo",
+    "patterns":["suggest me vivo mobiles","vivo","vivo v23","give me vivo v23","vivo y75","vivo y21e","take me to vivo mobiles"],
+    "responses":["please go through this links:<a href='https://tinyurl.com/bdevhmcv'>vivo v23 5g</a> | <a href='https://tinyurl.com/ysa4meda'>vivo y75 </a>  | <a href='https://tinyurl.com/ycx9xkyj'>vivo y21e</a>"],
+    "context":[""]
+  },
+  {
+    "tag": "Television",
+    "patterns": ["samsung tv","smart tv","tv under 40000","best tv","suggest 4k tv","tv"],
+    "responses":["Please view this links:<a href='https://tinyurl.com/3zwy4vxz'>TCL Smart TV</a> | <a href ='https://tinyurl.com/38e4ffzr'>Oneplus Tv</a> | <a href = 'https://tinyurl.com/mryusb4a'>LG 4K</a> | <a href = 'https://tinyurl.com/3fu7tyem'>SAMSUNG 4k </a> | <a href ='https://tinyurl.com/yc666ntr'>SONY 4k</a>"],
+    "context": [""]
+  },
+  {
+    "tag": "Refrigerator",
+    "patterns": ["Whirlpool fridge", "refrigerators under 40000","whirlpool fridge","samsung fridge","LG fridge","fridge" ],
+    "responses": ["Please click on this link:<a href='https://tinyurl.com/3hxrx68s'>Samsung Fridge</a> | <a href ='https://tinyurl.com/ymnr9tek'>Whirlpool Fridge</a> | <a href ='https://tinyurl.com/bdkhttm6'>Godrej Fridge</a> | <a href = 'https://tinyurl.com/5bxhnuhv'>Haier fridge</a> | <a href = 'https://tinyurl.com/58jsyaxa'>LG Fridge </a>"],
+    "context": [""]
+  },
+  {
+    "tag": "Microwave Oven",
+    "patterns": ["whirlpool oven","oven","microwave oven","samsung oven","panasonic oven","LG oven","Ovens under 20000"],
+    "responses": ["please click on this link:<a href='https://tinyurl.com/5n6zcc6c'>Samsung oven</a> | <a href='https://tinyurl.com/2mr45fwe'>Panasonic oven</a> | <a href ='https://tinyurl.com/mvtrmf2a'>LG oven </a> | <a href ='https://tinyurl.com/5mundeuh'>Whirlpool oven</a>"],
+    "context": [""]
+  },
+  {
+    "tag": "Washing Machines",
+    "patterns": ["washing machines","bosch","LG washing machine","samsung washing machines","front load","top load","Washing machines under 30000"],
+    "responses": ["please click on this link: <a href ='https://tinyurl.com/8x9hav4b'>Samsung Washing Machine</a> | <a href='https://tinyurl.com/5byev6pc'>Bosch Washing Machine</a> | <a href = 'https://tinyurl.com/hsjh8n6v'>LG Washing Machine</a>"],
+    "context": [""]
+  }
+
+  ]}
